@@ -61,7 +61,7 @@ app.get("/scrape", function(req, res) {
 
     // Now, we grab every h3 within an article tag, and do the following:
     $("h3.bc-title").each(function(i, element) {
-
+        
       // Add the text and href of every link, and save them as properties of the result object
       result.title = $(this)
         .children("a")

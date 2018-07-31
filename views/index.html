@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All the News</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+
+    <style>
+        body {
+            background-color: #F2F6D0
+        }
+
+        header {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        /* h1 {
+            margin-top: auto;
+            margin-bottom: auto;
+            height: 700px;
+            width: 100px;
+            text-align: center;
+        }
+
+        h2 {
+            height: 100px;
+            width: 50px;
+            text-align: center;
+        }  */ 
+
+        #wrapper {
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 5%;
+        }
+
+        #articles {
+            display: inline-block;
+            overflow: auto;
+            width: 60%;
+            height: 700px;
+            float: none;
+        }
+
+        #comments {
+            display: inline-block;
+            overflow: auto;
+            width: 30%;
+            float: right;
+        }
+
+        #notes {
+            float: right;
+            width: 30%;
+        }
+
+        textarea,
+        input {
+            display: block;
+            width: 100%;
+            background-color: #FCF5C7;
+        }
+
+        input {
+            height: 36px;
+            font-size: 24px;
+        }
+
+        textarea {
+            height: 200px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../public/images/espn.jpg">
+    </header>
+
+    <br>
+
+    <div id="wrapper">
+        <h1>ESPN News Scraper</h1>
+        <h2>
+            <i>Find out the latest topics and news in sports today!</i>
+        </h2>
+
+        <br> 
+
+        <div id="articles">
+            <article class="tile is-child notification is-info">
+                <p class="title">Latest News</p>
+                <p class="subtitle">Sports Today</p>
+            </article>
+        </div>
+
+    <div id="comments">
+        <article class="tile is-child notification is-success">
+            <div class="content">
+                <p class="title">Comments</p>
+                <div class="content">
+                    <!-- Content -->
+                </div>
+            </div>
+        </article>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
